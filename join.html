@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700|Noto+Sans+KR:300,400,500,600,700,900|Noto+Sans+JP:300,400,700|Noto+Sans+SC:300,400,700|Noto+Sans+TC:300,400,700|Cormorant:700|Nanum+Myeongjo:500, 700|Noto+Serif+JP:700|Noto+Serif+SC:700|Noto+Serif+TC:700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style/reset.css">
+	<link rel="stylesheet" href="style/main.css">
+	<title>회원 가입</title>
+	<script defer src="script/main.js"></script>
+</head>
+<body>
+	<section class="wrapper-join-content">
+		<div class="join-content">
+			<h1>회원 가입</h1>
+				<div class="input-box-wrapper" id="input-signup-email">
+					<span class="input-box-title">이메일 계정</span>
+					<div class="input-box">
+						<input type="email" placeholder="이메일을 입력해주세요." id="input-email" />
+						<span class="btn-reset"></span>
+						<button>인증 메일 발송</button>
+						<span class="label-passed">인증 완료</span>
+					</div>
+					<p class="valid-email-error">에러 메시지</p>
+					<p class="valid-email-pass">인증되었습니다.</p>
+				</div>
+				<div class="code-check-wrapper">
+					<div class="input-box-wrapper">
+						<span class="input-box-title">인증 번호</span>
+						<div class="input-box">
+							<input type="text" placeholder="인증 번호를 입력해주세요." id="input-email-check" maxlength="6" />
+							<span class="btn-reset"></span>
+							<button>인증하기</button>
+						</div>
+						<p class="valid-code-error">에러 메시지</p>
+					</div>
+				</div>
+				<div class="input-box-wrapper">
+					<span class="input-box-title">비밀번호
+						<span id="btn-pwd-info">비밀번호 규칙</span>
+					</span>
+					<div class="input-box">
+						<input type="password" placeholder="비밀번호를 입력해주세요." id="input-pwd" />
+						<span class="btn-reset"></span>
+					</div>
+					<p class="valid-pwd-error">에러 메시지</p>
+					<p class="valid-pwd-pass">사용 가능한 비밀번호입니다.</p>
+					<div class="wrapper-tooltip">
+						<span class="tooltip-dimmed"></span>
+						<div id="tooltip-password">
+							<p>안전한 비밀번호</p>
+							<p>비밀번호는 영문자와 숫자 또는 특수문자를 조합하여 6~20자 내로 설정 가능합니다.</p>
+						</div>
+					</div>
+				</div>
+				<div class="input-box-wrapper">
+					<span class="input-box-title">비밀번호 확인</span>
+					<div class="input-box">
+						<input type="password" placeholder="비밀번호를 다시 한 번 입력해주세요." id="input-pwd-confirm" />
+						<span class="btn-reset"></span>
+					</div>
+					<p class="valid-pwd-confirm-error">비밀번호가 일치하지 않습니다.</p>
+					<p class="valid-pwd-confirm-pass">비밀번호가 일치합니다.</p>
+				</div>
+				<div class="btn-wrapper-join">
+					<button>회원 가입</button>
+				</div>
+		</div>
+	</section>
+</body>
+</html>
